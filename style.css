@@ -3,45 +3,13 @@ body, html {
     color: white;
     min-height: 200vh;
     margin: 0;
-    background: 
-    linear-gradient(-90deg, 
-        rgba(12, 50, 107, 0.767), 
-        rgb(13, 13, 105), 
-        rgba(65, 17, 70, 0.959))
+    background-image: url(./kastAssets/background.jpg);
+    background-attachment: relative;
 }
-
-#headerContainer {
-    float: left;
-}
-
-h2 {
-    float: left;
-    font-size: 25px;
-    font-stretch: ultra-expanded;
-}
-
-img:first-child {
-    float: right;
-    padding: 50px;
-}
-
-img:nth-of-type(2) {}
-
-ul {
-    list-style-type: none;
-    margin: 20px;
-    padding: 0;
-    float: right;
-}
-li {
-    display: inline;
-    padding: 30px;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-}
-
-.text {
-    font-weight: normal;
-    width: 50vw;
+.container {
+    display: table;
+    grid-column-start: 1px;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
 }
