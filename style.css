@@ -6,41 +6,74 @@ body, html {
     background-image: url(./kastAssets/background.jpg);
     background-position: relative;
 }
-
-#navbar {
+.navbar {
+    background-color: rgba(128, 128, 128, 0.39);
+    position: fixed;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
 }
-.nav-item {
-    margin: 10px 20px;
+.menu {
+    font-size: 14pt;
+    font-weight: 300;
+    display: inline-flex;
+    position: fixed;
+    top: 15px;
+    right: 150px;
 }
 #logo {
     display: flex;
     justify-content: left;
+    height: auto;
 }
-.h2 {
-    
+a {
+    color: white;
+    text-decoration: none;
+}
+h2 {
+    font-size: 37px;
+    letter-spacing: 20.5px;
+}
+h1 {
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+#paragraph {
+    font-size: 20px;
+    line-height: 1.5;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 30em;
 }
 .openKast {
     border: 1px solid;
     border-radius: 3px;
     background: transparent;
     color: white;
-    display: inline-block;
-    width: 104px;
+    width: 110px;
     height: 27px;
     margin: 4px 2px;
+    margin-top: 30px;
     text-decoration: solid;
     font-family: inherit;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 1.5px;
     text-align: center;
+    display: relative;
+    margin-left: auto;
+    margin-right: 20px;
 }
 .openKastAgain {
     background-color: rgb(254, 144, 0);
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-color: rgb(254, 144, 0);
     border-radius: 2px;
     color: white;
@@ -52,16 +85,63 @@ body, html {
     font-weight: 700;
     font-family: inherit;
     text-align: center;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #laptop {
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding-top: 200px;
 }
-.gridMain {
-    
+.featured {
+    border: 1px solid white;
+    background-color: white;
+    width: auto;
+    height: 60vh;
+    margin-top: 100px;
+    color: black;
+    text-align: center;
+    font-size: 18pt;
 }
-.text {
-    margin-right: 200px;
-    margin-left: 200px;
+.grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 350px);
+    grid-auto-rows: 175px;
+    vertical-align: middle;
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+.quote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    color: #434146;
+    font-style: italic;
+    font-size: 18px;
+}
+.quote2 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    color: #434146;
+    font-style: italic;
+    font-size: 18px;
+}
+.whatIsKast {
+    border: 1px solid transparent;
+    background-image: url(./kastAssets/background2.jpg);
+    height: 60vh;
+}
+#paragraph2 {
+    font-size: 25px;
+    line-height: 1.5;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 40em;
 }
